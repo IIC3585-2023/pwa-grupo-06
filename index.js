@@ -7,7 +7,8 @@ const firebaseConfig = {
   projectId: "pwa-g6",
   storageBucket: "pwa-g6.appspot.com",
   messagingSenderId: "144479401328",
-  appId: "1:144479401328:web:020cf45f116d226d1e8bb5"
+  appId: "1:144479401328:web:020cf45f116d226d1e8bb5",
+  vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18'
 };
 
 const app = initializeApp(firebaseConfig);
@@ -18,7 +19,7 @@ function IntitalizeFireBaseMessaging() {
   Notification.requestPermission()
       .then(function () {
           console.log("Notification Permission");
-          return getToken({ vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18' });
+          return getToken(firebaseConfig);
       })
       .then(function (token) {
           console.log("Token : "+token);
