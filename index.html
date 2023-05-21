@@ -80,8 +80,7 @@
           projectId: "pwa-g6",
           storageBucket: "pwa-g6.appspot.com",
           messagingSenderId: "144479401328",
-          appId: "1:144479401328:web:020cf45f116d226d1e8bb5",
-          vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18'
+          appId: "1:144479401328:web:020cf45f116d226d1e8bb5"
         };
         firebase.initializeApp(firebaseConfig);
         const messaging=firebase.messaging();
@@ -91,7 +90,7 @@
                 .requestPermission()
                 .then(function () {
                     console.log("Notification Permission");
-                    return messaging.getToken();
+                    return messaging.getToken(messaging, {vapidKey:'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18'});
                 })
                 .then(function (token) {
                     console.log("Token : "+token);
