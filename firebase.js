@@ -12,8 +12,7 @@ const app = initializeApp(firebaseConfig);
 // const messaging = firebase.messaging(app);
 export const messaging = getMessaging(app);
 
-messaging
-  .requestPermission()
+Notification.requestPermission()
   .then(function () {
     console.log('Notification permission granted.');
     return getToken(messaging, { vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18'});
@@ -26,7 +25,7 @@ messaging
   });
 
 let enableForegroundNotification = true;
-messaging.onMessage(function (payload) {
+onMessage(function (payload) {
     console.log('Message received. ', payload);
     console.log(payload.notification);
     const notification = payload.notification;
