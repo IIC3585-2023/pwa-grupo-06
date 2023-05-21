@@ -15,6 +15,7 @@ const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 
 function IntitalizeFireBaseMessaging() {
+  console.log('por la chuchaaaa')
   Notification.requestPermission()
       .then(function () {
           console.log("Notification Permission");
