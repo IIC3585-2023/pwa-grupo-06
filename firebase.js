@@ -1,3 +1,5 @@
+import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 const firebaseConfig = {
     apiKey: "AIzaSyA-toGx8coidWYspBsuKWdIJuZp-dM_Pbs",
     authDomain: "pwa-g6.firebaseapp.com",
@@ -6,14 +8,15 @@ const firebaseConfig = {
     messagingSenderId: "144479401328",
     appId: "1:144479401328:web:020cf45f116d226d1e8bb5"
 };
-const app = firebase.initializeApp(firebaseConfig);
-const messaging = firebase.messaging.getMessaging((app));
+const app = initializeApp(firebaseConfig);
+// const messaging = firebase.messaging(app);
+export const messaging = getMessaging(app);
 
 messaging
   .requestPermission()
   .then(function () {
     console.log('Notification permission granted.');
-    return messaging.getToken();
+    return getToken(messaging, { vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18'});
   })
   .then(function (token) {
     console.log(token);
