@@ -7,7 +7,7 @@ const firebaseConfig = {
     appId: "1:144479401328:web:020cf45f116d226d1e8bb5"
 };
 const app = firebase.initializeApp(firebaseConfig);
-const messaging = firebase.getMessaging(app);
+const messaging = firebase.messaging.getMessaging((app));
 
 messaging
   .requestPermission()
