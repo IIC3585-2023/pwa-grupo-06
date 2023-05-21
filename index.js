@@ -1,9 +1,3 @@
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-// import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
-importScripts('https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/7.14.6/firebase-messaging.js');
-
-
 const firebaseConfig = {
   apiKey: "AIzaSyA-toGx8coidWYspBsuKWdIJuZp-dM_Pbs",
   authDomain: "pwa-g6.firebaseapp.com",
@@ -13,43 +7,6 @@ const firebaseConfig = {
   appId: "1:144479401328:web:020cf45f116d226d1e8bb5",
   vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18'
 };
-
-const app = firebase.initializeApp(firebaseConfig);
-const messaging = firebase.getMessaging(app);
-
-function IntitalizeFireBaseMessaging() {
-  console.log('por la chuchaaaa')
-  Notification.requestPermission()
-      .then(function () {
-          console.log("Notification Permission");
-          return firebase.getToken();
-      })
-      .then(function (token) {
-          console.log("Token : "+token);
-      })
-      .catch(function (error) {
-          console.log(error);
-      });
-}
-
-firebase.onMessage(function (payload) {
-  console.log(payload);
-  const notificationOption={
-      body:payload.notification.body,
-      icon:payload.notification.icon
-  };
-
-  if(Notification.permission==="granted"){
-      var notification=new Notification(payload.notification.title,notificationOption);
-      notification.onclick=function (ev) {
-          ev.preventDefault();
-          window.open(payload.notification.click_action,'_blank');
-          notification.close();
-      }
-  }
-
-});
-
 // onTokenRefresh(function () {
 //   messaging.getToken()
 //       .then(function (newtoken) {
@@ -59,7 +16,6 @@ firebase.onMessage(function (payload) {
 //           console.log(error);
 //       })
 // })
-IntitalizeFireBaseMessaging();
 
 
 // function requestPermission() {
