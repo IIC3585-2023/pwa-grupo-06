@@ -1,3 +1,19 @@
+importScripts('https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/7.14.6/firebase-messaging.js');
+
+var firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_FIREBASE_DOMAIN_NAME",
+  databaseURL: "YOUR_FIREBASE_DATBASE_URL",
+  projectId: "YOUR_FIREBASE_PROJECT_ID",
+  storageBucket: "YOUR_FIREBASE_STORAGE_BUCKET END WITH appspot.com",
+  messagingSenderId: "YOUR SENDER ID",
+  appId: "YOUR APP ID",
+  measurementId: "YOUR MEASUREMENT ID"
+};
+firebase.initializeApp(firebaseConfig);
+const messaging=firebase.messaging();
+
 // Register the service worker
 if ('serviceWorker' in navigator) {
   // Wait for the 'load' event to not block other work
