@@ -18,7 +18,7 @@ function IntitalizeFireBaseMessaging() {
   Notification.requestPermission()
       .then(function () {
           console.log("Notification Permission");
-          return getToken();
+          return getToken({ vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18' });
       })
       .then(function (token) {
           console.log("Token : "+token);
