@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-import { getMessaging, getToken, onMessage, onTokenRefresh } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
+import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA-toGx8coidWYspBsuKWdIJuZp-dM_Pbs",
@@ -46,15 +46,15 @@ onMessage(function (payload) {
 
 });
 
-onTokenRefresh(function () {
-  messaging.getToken()
-      .then(function (newtoken) {
-          console.log("New Token : "+ newtoken);
-      })
-      .catch(function (error) {
-          console.log(error);
-      })
-})
+// onTokenRefresh(function () {
+//   messaging.getToken()
+//       .then(function (newtoken) {
+//           console.log("New Token : "+ newtoken);
+//       })
+//       .catch(function (error) {
+//           console.log(error);
+//       })
+// })
 IntitalizeFireBaseMessaging();
 
 
