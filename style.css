@@ -1,0 +1,122 @@
+/* Main styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #252d31;
+  padding: 0px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 28px;
+  color: white;
+}
+.equipos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.details p {
+  margin: 0;
+}
+.teams {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: #363b3e;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.score {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+.vs {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .game {
+    width: 90%;
+  }
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  color: white;
+}
+
+th {
+  background-color: gray;
+}
+
+tr:nth-child(even) {
+  background-color: #363b3e;
+}
+
+nav {
+  background-color: #3a4144;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
