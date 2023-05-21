@@ -1,3 +1,73 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+import { getMessaging, getToken, onMessage, onTokenRefresh } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA-toGx8coidWYspBsuKWdIJuZp-dM_Pbs",
+  authDomain: "pwa-g6.firebaseapp.com",
+  projectId: "pwa-g6",
+  storageBucket: "pwa-g6.appspot.com",
+  messagingSenderId: "144479401328",
+  appId: "1:144479401328:web:020cf45f116d226d1e8bb5"
+};
+
+const app = initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
+
+function IntitalizeFireBaseMessaging() {
+  Notification.requestPermission()
+      .then(function () {
+          console.log("Notification Permission");
+          return getToken();
+      })
+      .then(function (token) {
+          console.log("Token : "+token);
+      })
+      .catch(function (error) {
+          console.log(error);
+      });
+}
+
+onMessage(function (payload) {
+  console.log(payload);
+  const notificationOption={
+      body:payload.notification.body,
+      icon:payload.notification.icon
+  };
+
+  if(Notification.permission==="granted"){
+      var notification=new Notification(payload.notification.title,notificationOption);
+      notification.onclick=function (ev) {
+          ev.preventDefault();
+          window.open(payload.notification.click_action,'_blank');
+          notification.close();
+      }
+  }
+
+});
+
+onTokenRefresh(function () {
+  messaging.getToken()
+      .then(function (newtoken) {
+          console.log("New Token : "+ newtoken);
+      })
+      .catch(function (error) {
+          console.log(error);
+      })
+})
+IntitalizeFireBaseMessaging();
+
+
+// function requestPermission() {
+//   console.log('Requesting permission...');
+//   Notification.requestPermission().then((permission) => {
+//     if (permission === 'granted') {
+//       console.log('Notification permission granted.')
+//     }
+//   })
+// }
+  
+
 // Register the service worker
 if ("serviceWorker" in navigator) {
   // Wait for the 'load' event to not block other work
