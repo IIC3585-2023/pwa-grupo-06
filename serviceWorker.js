@@ -9,6 +9,8 @@ const cacheResources = [
   '/index.js',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
+  'https://www.w3schools.com/w3css/4/w3.css',
+  'https://cdn.jsdelivr.net/npm/idb@7/build/umd.js'
 ];
 
 // When the service worker is installing, open the cache and add the precache resources to it

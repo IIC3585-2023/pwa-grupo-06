@@ -1,0 +1,146 @@
+{
+    "huachipato": {
+        "name": "Huachipato",
+        "points": 28,
+        "played": 14,
+        "wins": 9,
+        "draws": 1,
+        "losses": 4,
+        "logo": "huachipato.png"
+    },
+    "cobresal": {
+        "name": "Cobresal",
+        "points": 27,
+        "played": 14,
+        "wins": 8,
+        "draws": 3,
+        "losses": 3,
+        "logo": "cobresal.png"
+    },
+    "coquimbo_unido": {
+        "name": "Coquimbo Unido",
+        "points": 25,
+        "played": 15,
+        "wins": 8,
+        "draws": 1,
+        "losses": 6,
+        "logo": "coquimbo_unido.png"
+    },
+    "u_catolica": {
+        "name": "U. Católica",
+        "points": 23,
+        "played": 14,
+        "wins": 6,
+        "draws": 5,
+        "losses": 3,
+        "logo": "u_catolica.png"
+    },
+    "colo_colo": {
+        "name": "Colo Colo",
+        "points": 23,
+        "played": 15,
+        "wins": 6,
+        "draws": 5,
+        "losses": 4,
+        "logo": "colo_colo.png"
+    },
+    "u_chile": {
+        "name": "U. de Chile",
+        "points": 23,
+        "played": 14,
+        "wins": 6,
+        "draws": 5,
+        "losses": 3,
+        "logo": "u_chile.png"
+    },
+    "everton_vina": {
+        "name": "Everton Viña",
+        "points": 22,
+        "played": 15,
+        "wins": 6,
+        "draws": 4,
+        "losses": 5,
+        "logo": "everton_vina.png"
+    },
+    "u_espanola": {
+        "name": "U. Española",
+        "points": 20,
+        "played": 14,
+        "wins": 5,
+        "draws": 5,
+        "losses": 4,
+        "logo": "u_espanola.png"
+    },
+    "o_higgins": {
+        "name": "O' Higgins",
+        "points": 20,
+        "played": 15,
+        "wins": 5,
+        "draws": 5,
+        "losses": 5,
+        "logo": "o_higgins.png"
+    },
+    "a_italiano": {
+        "name": "A. Italiano",
+        "points": 19,
+        "played": 15,
+        "wins": 5,
+        "draws": 4,
+        "losses": 6,
+        "logo": "a_italiano.png"
+    },
+    "palestino": {
+        "name": "Palestino",
+        "points": 19,
+        "played": 15,
+        "wins": 5,
+        "draws": 4,
+        "losses": 6,
+        "logo": "palestino.png"
+    },
+    "nublense": {
+        "name": "Ñublense",
+        "points": 18,
+        "played": 15,
+        "wins": 5,
+        "draws": 3,
+        "losses": 7,
+        "logo": "nublense.png"
+    },
+    "u_calera": {
+        "name": "U. La Calera",
+        "points": 17,
+        "played": 15,
+        "wins": 3,
+        "draws": 8,
+        "losses": 4,
+        "logo": "u_calera.png"
+    },
+    "curico_unido": {
+        "name": "Curicó Unido",
+        "points": 16,
+        "played": 15,
+        "wins": 5,
+        "draws": 1,
+        "losses": 9,
+        "logo": "curico_unido.png"
+    },
+    "copiapo": {
+        "name": "Copiapó",
+        "points": 13,
+        "played": 15,
+        "wins": 3,
+        "draws": 4,
+        "losses": 8,
+        "logo": "copiapo.png"
+    },
+    "magallanes": {
+        "name": "Magallanes",
+        "points": 8,
+        "played": 14,
+        "wins": 2,
+        "draws": 2,
+        "losses": 10,
+        "logo": "magallanes.png"
+    }
+}
