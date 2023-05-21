@@ -1,5 +1,8 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+// import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
+importScripts('https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/7.14.6/firebase-messaging.js');
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyA-toGx8coidWYspBsuKWdIJuZp-dM_Pbs",
@@ -11,15 +14,15 @@ const firebaseConfig = {
   vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18'
 };
 
-const app = initializeApp(firebaseConfig);
-const messaging = getMessaging(app);
+const app = firebase.initializeApp(firebaseConfig);
+const messaging = firebase.getMessaging(app);
 
 function IntitalizeFireBaseMessaging() {
   console.log('por la chuchaaaa')
   Notification.requestPermission()
       .then(function () {
           console.log("Notification Permission");
-          return getToken(firebaseConfig);
+          return firebase.getToken();
       })
       .then(function (token) {
           console.log("Token : "+token);
@@ -29,7 +32,7 @@ function IntitalizeFireBaseMessaging() {
       });
 }
 
-onMessage(function (payload) {
+firebase.onMessage(function (payload) {
   console.log(payload);
   const notificationOption={
       body:payload.notification.body,
