@@ -8,7 +8,7 @@ const cacheResources = [
   '/style.css',
   '/index.js',
   '/icons/icon-192.png',
-  '/icons/icon-512.png',
+  '/icons/icon-512.png'
 ];
 
 // When the service worker is installing, open the cache and add the precache resources to it

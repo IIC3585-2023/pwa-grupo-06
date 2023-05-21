@@ -2,17 +2,73 @@
 
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="./icons/icon-192.png">  
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./icons/icon-192.png" />
     <title>PWA Grupo 6</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="./manifest.json">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/idb@7/build/umd.js"></script>
   </head>
 
-  <body class="w3-container w3-dark-grey w3-margin">
-    <h1 class="w3-center">Resultados Liga Chilena</h1>
+  <body>
+    <nav>
+      <a href="./index.html">Partidos</a>
+      <a href="./equipos.html">Equipos</a>
+    </nav>
+    <h1>Partidos</h1>
     <script src="index.js"></script>
+    <div class="games">
+      <div class="game" onclick="toggleText(this)">
+        <div class="details">
+          <p class="fecha">2/3/2000</p>
+        </div>
+        <div class="teams">
+          <div class="team">
+            <div class="details"></div>
+            <img src="" alt="" class="logo" />
+            <p class="name">Colo Colo</p>
+            <p class="score">5</p>
+          </div>
+          <p class="vs">vs</p>
+          <div class="team">
+            <img src="" alt="" class="logo" />
+            <p class="name">Colo Colo</p>
+            <p class="score">5</p>
+          </div>
+        </div>
+      </div>
+      <div class="game" onclick="toggleText(this)">
+        <div class="details">
+          <p class="fecha">2/3/2000</p>
+        </div>
+        <div class="teams">
+          <div class="team">
+            <div class="details"></div>
+            <img src="" alt="" class="logo" />
+            <p class="name">Colo Colo</p>
+            <p class="score">5</p>
+          </div>
+          <p class="vs">vs</p>
+          <div class="team">
+            <img src="" alt="" class="logo" />
+            <p class="name">Colo Colo</p>
+            <p class="score">5</p>
+          </div>
+        </div>
+      </div>
+      <script>
+        function toggleText(box) {
+          var boxContents = box.querySelectorAll(".score");
+          boxContents.forEach(function (content) {
+            if (content.style.display === "none") {
+              content.style.display = "block";
+            } else {
+              content.style.display = "none";
+            }
+          });
+        }
+      </script>
+    </div>
   </body>
-</html> 
+</html>
