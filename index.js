@@ -1,7 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import { getMessaging, getToken, onMessage, onTokenRefresh } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyA-toGx8coidWYspBsuKWdIJuZp-dM_Pbs",
   authDomain: "pwa-g6.firebaseapp.com",
