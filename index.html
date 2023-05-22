@@ -71,17 +71,6 @@
       </script>
     </div>
     <button id="notificationButton">Send Notification</button>
-    <script type="module" src="firebase.js" defer></script>
-    <script>
-      const button = document.getElementById("notificationButton");
-      button.addEventListener("click", function () {
-        const title = "Notification Title";
-        const data = {
-          key1: "value1",
-          key2: "value2",
-        };
-        sendNotification(title, data);
-      });
-    </script>
+    <script type="module" src="firebase.js"></script>
   </body>
 </html>

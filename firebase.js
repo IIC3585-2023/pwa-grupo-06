@@ -51,3 +51,13 @@ export function sendNotification(title, data) {
     console.log('Error sending message:', error);
     });
 }
+
+const button = document.getElementById("notificationButton");
+    button.addEventListener("click", function () {
+    const title = "Notification Title";
+    const data = {
+        key1: "value1",
+        key2: "value2",
+    };
+    sendNotification(title, data);
+    });
