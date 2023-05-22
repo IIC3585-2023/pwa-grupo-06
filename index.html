@@ -70,7 +70,18 @@
         }
       </script>
     </div>
-    <p id="token"></p>
+    <button id="notificationButton">Send Notification</button>
     <script type="module" src="firebase.js"></script>
+    <script>
+      const button = document.getElementById("notificationButton");
+      button.addEventListener("click", function () {
+        const title = "Notification Title";
+        const data = {
+          key1: "value1",
+          key2: "value2",
+        };
+        sendNotification(title, data);
+      });
+    </script>
   </body>
 </html>

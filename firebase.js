@@ -21,9 +21,8 @@ Notification.requestPermission()
     console.log(token);
     localStorage.setItem('token', token)
     const registrationTokens = [token]
-    getMessaging().subscribeToTopic(registrationTokens, 'pruebas').then((response) => {
+    messaging.subscribeToTopic(registrationTokens, 'pruebas').then((response) => {
         console.log('Successfully subscribed to topic:', response);
-        sendNotification('holiwisi',{'id':'que ti importa'})
       })
       .catch((error) => {
         console.log('Error subscribing to topic:', error);
@@ -49,8 +48,7 @@ export const sendNotification = (title, data) => {
     const message = {
         title: title,
         data: data,
-        // token: localStorage.getItem('token'),
-        topic: 'pruebas'
+        token: localStorage.getItem('token')
       };
     messaging.send(message)
     .then((response) => {
