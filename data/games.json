@@ -2,49 +2,57 @@
     "1": {
         "team_1": "Colo Colo",
         "team_2": "Curicó Unido",
-        "score": "0 - 1",
+        "score_1": "0",
+        "score_2": "1",
         "date": "18-05-2023"
     },
     "2": {
         "team_1": "Palestino",
         "team_2": "O' Higgins",
-        "score": "0 - 1",
+        "score_1": "0",
+        "score_2": "1",
         "date": "19-05-2023"
     },
     "3": {
         "team_1": "A. Italiano",
         "team_2": "Huachipato",
-        "score": "1 - 0",
+        "score_1": "1",
+        "score_2": "0",
         "date": "19-05-2023"
     },
     "4": {
         "team_1": "Coquimbo Unido",
         "team_2": "Magallanes",
-        "score": "1 - 0",
+        "score_1": "1",
+        "score_2": "0",
         "date": "19-05-2023"
     },
     "5": {
         "team_1": "Ñublense",
         "team_2": "U. de Chile",
-        "score": "1 - 1",
+        "score_1": "1",
+        "score_2": "1",
         "date": "20-05-2023"
     },
     "6": {
         "team_1": "Everton Viña",
         "team_2": "Copiapó",
-        "score": "2 - 1",
+        "score_1": "2",
+        "score_2": "1",
         "date": "20-05-2023"
     },
     "7": {
         "team_1": "U. Católica",
         "team_2": "U. La Calera",
-        "score": "1 - 1",
+        "score_1": "1",
+        "score_2": "1",
         "date": "20-05-2023"
     },
     "8": {
         "team_1": "Cobresal",
         "team_2": "U. Española",
-        "score": "1 - 1",
+        "score_1": "0",
+        "score_2": "0",
         "date": "21-05-2023"
     }
 }

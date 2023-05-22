@@ -26,7 +26,6 @@ self.addEventListener('activate', (event) => {
 
 // When there's an incoming fetch request, try and respond with a precached resource, otherwise fall back to the network
 self.addEventListener('fetch', (event) => {
-  console.log('Fetch requested for:', event.request.url);
   event.respondWith(
     caches.match(event.request)
       .then((cachedResponse) => {
@@ -39,7 +38,10 @@ self.addEventListener('fetch', (event) => {
             const responseCopy = fetchResponse.clone();
             caches.open(cacheName)
               .then((cache) => {
-                cache.add(event.request, responseCopy);
+                if (!(event.request.url.includes('/google.firestore.v1.Firestore/Listen/'))) {
+                  console.log('Added to cache:', event.request.url)
+                  cache.put(event.request, responseCopy);
+                }
               });
             return fetchResponse;
           })

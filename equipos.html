@@ -2,16 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./icons/icon-192.png" />
+    <title>PWA Grupo 6</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="./style.css" />
-    <title>NBA Team Standings</title>
+    <script src="https://cdn.jsdelivr.net/npm/idb@7/build/umd.js"></script>
   </head>
   <body>
     <nav>
       <a href="./index.html">Partidos</a>
       <a href="./equipos.html">Equipos</a>
     </nav>
-    <h1>NBA Team Standings</h1>
+    <h1>Posiciones</h1>
     <div class="equipos">
       <table>
         <thead>
@@ -76,5 +79,6 @@
         </tbody>
       </table>
     </div>
+    <script type="module" src="getTeams.js"></script>
   </body>
 </html>
