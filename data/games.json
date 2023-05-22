@@ -1,58 +1,74 @@
 {
-    "1": {
-        "team_1": "Colo Colo",
-        "team_2": "Curicó Unido",
-        "score_1": "0",
-        "score_2": "1",
-        "date": "18-05-2023"
-    },
-    "2": {
-        "team_1": "Palestino",
-        "team_2": "O' Higgins",
-        "score_1": "0",
-        "score_2": "1",
-        "date": "19-05-2023"
-    },
-    "3": {
-        "team_1": "A. Italiano",
-        "team_2": "Huachipato",
-        "score_1": "1",
-        "score_2": "0",
-        "date": "19-05-2023"
-    },
-    "4": {
-        "team_1": "Coquimbo Unido",
-        "team_2": "Magallanes",
-        "score_1": "1",
-        "score_2": "0",
-        "date": "19-05-2023"
-    },
-    "5": {
-        "team_1": "Ñublense",
-        "team_2": "U. de Chile",
-        "score_1": "1",
-        "score_2": "1",
-        "date": "20-05-2023"
-    },
-    "6": {
-        "team_1": "Everton Viña",
-        "team_2": "Copiapó",
-        "score_1": "2",
-        "score_2": "1",
-        "date": "20-05-2023"
-    },
-    "7": {
-        "team_1": "U. Católica",
-        "team_2": "U. La Calera",
-        "score_1": "1",
-        "score_2": "1",
-        "date": "20-05-2023"
-    },
-    "8": {
-        "team_1": "Cobresal",
-        "team_2": "U. Española",
-        "score_1": "0",
-        "score_2": "0",
-        "date": "21-05-2023"
-    }
+  "1": {
+    "team_1": "Colo Colo",
+    "logo_1": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4155.png",
+    "team_2": "Curicó Unido",
+    "logo_2": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4183.png",
+    "score_1": "0",
+    "score_2": "1",
+    "date": "18-05-2023"
+  },
+  "2": {
+    "team_1": "Palestino",
+    "logo_1": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4162.png",
+    "team_2": "O' Higgins",
+    "logo_2": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4158.png",
+    "score_1": "0",
+    "score_2": "1",
+    "date": "19-05-2023"
+  },
+  "3": {
+    "team_1": "A. Italiano",
+    "logo_1": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4156.png",
+    "team_2": "Huachipato",
+    "logo_2": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4160.png",
+    "score_1": "1",
+    "score_2": "0",
+    "date": "19-05-2023"
+  },
+  "4": {
+    "team_1": "Coquimbo Unido",
+    "logo_1": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4178.png",
+    "team_2": "Magallanes",
+    "logo_2": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4173.png",
+    "score_1": "1",
+    "score_2": "0",
+    "date": "19-05-2023"
+  },
+  "5": {
+    "team_1": "Ñublense",
+    "logo_1": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4161.png",
+    "team_2": "U. de Chile",
+    "logo_2": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4153.png",
+    "score_1": "1",
+    "score_2": "1",
+    "date": "20-05-2023"
+  },
+  "6": {
+    "team_1": "Everton Viña",
+    "logo_1": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4182.png",
+    "team_2": "Copiapó",
+    "logo_2": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4177.png",
+    "score_1": "2",
+    "score_2": "1",
+    "date": "20-05-2023"
+  },
+  "7": {
+    "team_1": "U. Católica",
+    "logo_1": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4157.png",
+    "team_2": "U. La Calera",
+    "logo_2": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/3930.png",
+    "score_1": "1",
+    "score_2": "1",
+    "date": "20-05-2023"
+  },
+  "8": {
+    "team_1": "Cobresal",
+    "logo_1": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4159.png",
+    "team_2": "U. Española",
+    "logo_2": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4163.png",
+    "score_1": "0",
+    "score_2": "0",
+    "date": "21-05-2023"
+  }
 }

@@ -47,11 +47,14 @@ async function getGames() {
       <div class="teams">
         <div class="team">
           <div class="details"></div>
+        <div class="team">
+          <img src=${game.logo_1} alt="" class="logo" />
           <p class="name">${game.team_1}</p>
           <p class="score">${game.score_1}</p>
         </div>
         <p class="vs">vs</p>
         <div class="team">
+          <img src=${game.logo_2} alt="" class="logo" />
           <p class="name">${game.team_2}</p>
           <p class="score">${game.score_2}</p>
         </div>
