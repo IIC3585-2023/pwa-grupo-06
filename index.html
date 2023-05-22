@@ -20,7 +20,40 @@
     <!-- <script type="module" src="addFirestoreData.js"></script> -->
     <script type="module" src="index.js"></script>
     <div class="games"></div>
+    <button onclick="sendPostRequest()">Send message</button>
     <script type="module" src="firebase.js"></script>
     <script type="module" src="getGames.js"></script>
+    <script>
+      function sendPostRequest() {
+        const url = 'https://fcm.googleapis.com/fcm/send';
+        
+        const data = {
+        "priority": "high",
+        "notification": {
+            "title": "Prueba js",
+            "body":"Probando"},
+        "to":"fEw2740rLIZBh3_H93H94R:APA91bHKJwZNOP1WuzHZkWqJRexrbSm-rHCi450z7vHnItQEL98ncEX3SJkMe6KBUwvMmgjJk-688m2qN8ENZRQ9O7BZBRHRiJA9_vgmrKsPABOt6Pk_0taX6wp38t_dVBAaIbQZURCn"
+        };
+        
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'key='+localStorage.getItem('token')
+          },
+          body: JSON.stringify(data)
+        })
+        .then(response => {
+          if (response.ok) {
+            console.log('POST request succeeded');
+          } else {
+            console.error('POST request failed');
+          }
+        })
+        .catch(error => {
+          console.error('Error sending POST request:', error);
+        });
+      }
+    </script>
   </body>
 </html>
