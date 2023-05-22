@@ -1,4 +1,13 @@
 {
+    "cobresal": {
+        "name": "Cobresal",
+        "points": 28,
+        "played": 15,
+        "wins": 8,
+        "draws": 4,
+        "losses": 3,
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4159.png"
+    },
     "huachipato": {
         "name": "Huachipato",
         "points": 28,
@@ -6,16 +15,7 @@
         "wins": 9,
         "draws": 1,
         "losses": 4,
-        "logo": "huachipato.png"
-    },
-    "cobresal": {
-        "name": "Cobresal",
-        "points": 27,
-        "played": 14,
-        "wins": 8,
-        "draws": 3,
-        "losses": 3,
-        "logo": "cobresal.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4160.png"
     },
     "coquimbo_unido": {
         "name": "Coquimbo Unido",
@@ -24,7 +24,7 @@
         "wins": 8,
         "draws": 1,
         "losses": 6,
-        "logo": "coquimbo_unido.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4178.png"
     },
     "u_catolica": {
         "name": "U. Católica",
@@ -33,7 +33,7 @@
         "wins": 6,
         "draws": 5,
         "losses": 3,
-        "logo": "u_catolica.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4157.png"
     },
     "colo_colo": {
         "name": "Colo Colo",
@@ -42,7 +42,7 @@
         "wins": 6,
         "draws": 5,
         "losses": 4,
-        "logo": "colo_colo.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4155.png"
     },
     "u_chile": {
         "name": "U. de Chile",
@@ -51,7 +51,7 @@
         "wins": 6,
         "draws": 5,
         "losses": 3,
-        "logo": "u_chile.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4153.png"
     },
     "everton_vina": {
         "name": "Everton Viña",
@@ -60,16 +60,16 @@
         "wins": 6,
         "draws": 4,
         "losses": 5,
-        "logo": "everton_vina.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4182.png"
     },
     "u_espanola": {
         "name": "U. Española",
-        "points": 20,
-        "played": 14,
+        "points": 21,
+        "played": 15,
         "wins": 5,
-        "draws": 5,
+        "draws": 6,
         "losses": 4,
-        "logo": "u_espanola.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4163.png"
     },
     "o_higgins": {
         "name": "O' Higgins",
@@ -78,7 +78,7 @@
         "wins": 5,
         "draws": 5,
         "losses": 5,
-        "logo": "o_higgins.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4158.png"
     },
     "a_italiano": {
         "name": "A. Italiano",
@@ -87,7 +87,7 @@
         "wins": 5,
         "draws": 4,
         "losses": 6,
-        "logo": "a_italiano.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4156.png"
     },
     "palestino": {
         "name": "Palestino",
@@ -96,7 +96,7 @@
         "wins": 5,
         "draws": 4,
         "losses": 6,
-        "logo": "palestino.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4162.png"
     },
     "nublense": {
         "name": "Ñublense",
@@ -105,7 +105,7 @@
         "wins": 5,
         "draws": 3,
         "losses": 7,
-        "logo": "nublense.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4161.png"
     },
     "u_calera": {
         "name": "U. La Calera",
@@ -114,7 +114,7 @@
         "wins": 3,
         "draws": 8,
         "losses": 4,
-        "logo": "u_calera.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/3930.png"
     },
     "curico_unido": {
         "name": "Curicó Unido",
@@ -123,7 +123,7 @@
         "wins": 5,
         "draws": 1,
         "losses": 9,
-        "logo": "curico_unido.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4183.png"
     },
     "copiapo": {
         "name": "Copiapó",
@@ -132,7 +132,7 @@
         "wins": 3,
         "draws": 4,
         "losses": 8,
-        "logo": "copiapo.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4177.png"
     },
     "magallanes": {
         "name": "Magallanes",
@@ -141,6 +141,6 @@
         "wins": 2,
         "draws": 2,
         "losses": 10,
-        "logo": "magallanes.png"
+        "logo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/small/4173.png"
     }
 }
