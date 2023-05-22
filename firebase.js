@@ -19,12 +19,12 @@ Notification.requestPermission()
   })
   .then(function (token) {
     console.log(token);
+    localStorage.setItem('token', token)
   })
   .catch(function (err) {
     console.log('Unable to get permission to notify.', err);
   });
 
-let enableForegroundNotification = true;
 onMessage(function (payload) {
     console.log('Message received. ', payload);
     console.log(payload.notification);
@@ -36,3 +36,18 @@ onMessage(function (payload) {
     };
     return new Notification(notificationTitle, notificationOptions);
 });
+
+export const sendNotification = (title, data) => {
+    const message = {
+        title: title,
+        body: data,
+        token: localStorage.getItem('token')
+      };
+    messaging.send(message)
+    .then((response) => {
+    console.log('Successfully sent message:', response);
+    })
+    .catch((error) => {
+    console.log('Error sending message:', error);
+    });
+}

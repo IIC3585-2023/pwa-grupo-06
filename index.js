@@ -7,25 +7,6 @@ const firebaseConfig = {
   appId: "1:144479401328:web:020cf45f116d226d1e8bb5",
   vapidKey: 'BLHZLAWEW1kvTgiPvKIb5dkmYgZACiBMHyO1_0PeIvWuzN8lZKLFK9LM1Z8BUzSzCchwc73C0ur4b5nSilJok18'
 };
-// onTokenRefresh(function () {
-//   messaging.getToken()
-//       .then(function (newtoken) {
-//           console.log("New Token : "+ newtoken);
-//       })
-//       .catch(function (error) {
-//           console.log(error);
-//       })
-// })
-
-
-// function requestPermission() {
-//   console.log('Requesting permission...');
-//   Notification.requestPermission().then((permission) => {
-//     if (permission === 'granted') {
-//       console.log('Notification permission granted.')
-//     }
-//   })
-// }
   
 
 // Register the service worker
