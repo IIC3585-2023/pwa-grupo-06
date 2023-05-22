@@ -1,5 +1,5 @@
-importScripts('https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/7.14.6/firebase-messaging.js');
+import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-messaging.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyA-toGx8coidWYspBsuKWdIJuZp-dM_Pbs",
@@ -10,8 +10,8 @@ const firebaseConfig = {
     appId: "1:144479401328:web:020cf45f116d226d1e8bb5"
   };
 
-firebase.initializeApp(firebaseConfig);
-const messaging=firebase.messaging();
+initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
 
 messaging.setBackgroundMessageHandler(function (payload) {
     console.log(payload);
