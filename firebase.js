@@ -20,13 +20,6 @@ Notification.requestPermission()
   .then(function (token) {
     console.log(token);
     localStorage.setItem('token', token)
-    const registrationTokens = [token]
-    messaging.subscribeToTopic(registrationTokens, 'pruebas').then((response) => {
-        console.log('Successfully subscribed to topic:', response);
-      })
-      .catch((error) => {
-        console.log('Error subscribing to topic:', error);
-      });
   })
   .catch(function (err) {
     console.log('Unable to get permission to notify.', err);
