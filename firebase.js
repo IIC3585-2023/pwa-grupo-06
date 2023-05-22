@@ -37,27 +37,17 @@ onMessage(function (payload) {
     return new Notification(notificationTitle, notificationOptions);
 });
 
-export function sendNotification(title, data) {
-    const message = {
-        title: title,
-        data: data,
-        token: localStorage.getItem('token')
-      };
-    messaging.send(message)
-    .then((response) => {
-    console.log('Successfully sent message:', response);
-    })
-    .catch((error) => {
-    console.log('Error sending message:', error);
-    });
-}
-
-const button = document.getElementById("notificationButton");
-    button.addEventListener("click", function () {
-    const title = "Notification Title";
-    const data = {
-        key1: "value1",
-        key2: "value2",
-    };
-    sendNotification(title, data);
-    });
+// export function sendNotification(title, data) {
+//     const message = {
+//         title: title,
+//         data: data,
+//         token: localStorage.getItem('token')
+//       };
+//     messaging.send(message)
+//     .then((response) => {
+//     console.log('Successfully sent message:', response);
+//     })
+//     .catch((error) => {
+//     console.log('Error sending message:', error);
+//     });
+// }
