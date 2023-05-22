@@ -19,58 +19,7 @@
     <h1>Partidos</h1>
     <!-- <script type="module" src="addFirestoreData.js"></script> -->
     <script type="module" src="index.js"></script>
-    <div class="games">
-      <div class="game" onclick="toggleText(this)">
-        <div class="details">
-          <p class="fecha">2/3/2000</p>
-        </div>
-        <div class="teams">
-          <div class="team">
-            <div class="details"></div>
-            <img src="" alt="" class="logo" />
-            <p class="name">Colo Colo</p>
-            <p class="score">5</p>
-          </div>
-          <p class="vs">vs</p>
-          <div class="team">
-            <img src="" alt="" class="logo" />
-            <p class="name">Colo Colo</p>
-            <p class="score">5</p>
-          </div>
-        </div>
-      </div>
-      <div class="game" onclick="toggleText(this)">
-        <div class="details">
-          <p class="fecha">2/3/2000</p>
-        </div>
-        <div class="teams">
-          <div class="team">
-            <div class="details"></div>
-            <img src="" alt="" class="logo" />
-            <p class="name">Colo Colo</p>
-            <p class="score">5</p>
-          </div>
-          <p class="vs">vs</p>
-          <div class="team">
-            <img src="" alt="" class="logo" />
-            <p class="name">Colo Colo</p>
-            <p class="score">5</p>
-          </div>
-        </div>
-      </div>
-      <script>
-        function toggleText(box) {
-          var boxContents = box.querySelectorAll(".score");
-          boxContents.forEach(function (content) {
-            if (content.style.display === "none") {
-              content.style.display = "block";
-            } else {
-              content.style.display = "none";
-            }
-          });
-        }
-      </script>
-    </div>
+    <div class="games"></div>
     <script type="module" src="firebase.js"></script>
     <script type="module" src="getGames.js"></script>
   </body>
