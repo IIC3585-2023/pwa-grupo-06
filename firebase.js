@@ -20,6 +20,14 @@ Notification.requestPermission()
   .then(function (token) {
     console.log(token);
     localStorage.setItem('token', token)
+    const registrationTokens = [token]
+    messaging.subscribeToTopic(registrationTokens, 'pruebas').then((response) => {
+        console.log('Successfully subscribed to topic:', response);
+        sendNotification('holiwisi',{'id':'que ti importa'})
+      })
+      .catch((error) => {
+        console.log('Error subscribing to topic:', error);
+      });
   })
   .catch(function (err) {
     console.log('Unable to get permission to notify.', err);
@@ -40,8 +48,9 @@ onMessage(function (payload) {
 export const sendNotification = (title, data) => {
     const message = {
         title: title,
-        body: data,
-        token: localStorage.getItem('token')
+        data: data,
+        // token: localStorage.getItem('token'),
+        topic: 'pruebas'
       };
     messaging.send(message)
     .then((response) => {
